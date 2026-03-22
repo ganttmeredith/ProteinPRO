@@ -103,9 +103,10 @@ Opens at `http://localhost:8501`
 5. Set `PORT=8080` in environment
 
 ### Streamlit Cloud
-1. Connect GitHub repo
-2. Select `app.py` as main file
-3. Add `packages.txt` if needed for system deps
+1. Connect GitHub repo (`ganttmeredith/ProteinPRO`), branch `main`, main file **`app.py`**
+2. Use Python **3.12** or **3.11** in Advanced settings (not 3.14)
+3. Add secrets (TOML) for `GEMINI_API_KEY`, Auth0, etc. as needed
+4. **Do not** add a `packages.txt` with only comments — Streamlit passes each line to `apt-get`; use no file, or one **package name per line** with no `#` lines (see [Streamlit deps docs](https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app/dependencies))
 
 ### Hugging Face Spaces
 1. Create a Space at [huggingface.co/new-space](https://huggingface.co/new-space), or **Duplicate** / **Sync** from this GitHub repo.
