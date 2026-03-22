@@ -33,4 +33,4 @@ google-generativeai>=0.8.0   # Gemini API - Best Use of Generative AI
 
 # Utilities and Configuration
 python-dotenv>=1.0.0
-pyyaml>=6.0.0
+PyYAML>=6.0.0  # provides `import yaml` (HF Spaces / pip clarity)

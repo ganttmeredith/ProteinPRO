@@ -1,6 +1,21 @@
+---
+title: ProteinPRO
+emoji: 🧬
+colorFrom: purple
+colorTo: blue
+sdk: streamlit
+sdk_version: "1.40.0"
+app_file: app.py
+pinned: false
+license: apache-2.0
+short_description: Predict protein–polymer hybrid stability from PDB structures and PET-RAFT monomer compositions.
+---
+
 # ProteinPRO: Protein Polymer Reactivity Optimization
 
-Predict polymer-protein hybrid formulation stability from PDB structures and monomer compositions using chemical descriptor featurization and machine learning.
+Predict polymer–protein hybrid formulation stability from PDB structures and monomer compositions using chemical descriptor featurization and machine learning.
+
+> **Hugging Face Spaces:** The YAML block above is Space metadata. After connecting this repo, set **Settings → App → Main file** to `app.py` if needed, and add secrets under **Settings → Variables and secrets**. See [DEPLOY_HF.md](DEPLOY_HF.md).
 
 ---
 
@@ -91,6 +106,15 @@ Opens at `http://localhost:8501`
 1. Connect GitHub repo
 2. Select `app.py` as main file
 3. Add `packages.txt` if needed for system deps
+
+### Hugging Face Spaces
+1. Create a Space at [huggingface.co/new-space](https://huggingface.co/new-space), or **Duplicate** / **Sync** from this GitHub repo.
+2. **Main file must be `app.py`** at the repository root (not `src/streamlit_app.py` from the default template). Delete the template `src/streamlit_app.py` if you copied the template first.
+3. Ensure root **`requirements.txt`** is the one from this repo (includes `PyYAML` / `pyyaml`).
+4. Under **Settings → Variables and secrets**, add the same variables as `.env.example` (e.g. `GEMINI_API_KEY`). For Auth0, set `AUTH0_REDIRECT_URI` to your Space callback URL (e.g. `https://YOURNAME-proteinpro.hf.space/oauth2callback` — check the live app URL in the browser).
+5. First build can take several minutes (RDKit, MDAnalysis, etc.). If the build times out, try a **Docker** Space or trim optional deps temporarily.
+
+Full checklist: [DEPLOY_HF.md](DEPLOY_HF.md).
 
 ---
 
