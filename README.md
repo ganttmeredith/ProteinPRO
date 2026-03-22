@@ -15,6 +15,12 @@ short_description: Predict protein–polymer hybrid stability from PDB structure
 
 Predict polymer–protein hybrid formulation stability from PDB structures and monomer compositions using chemical descriptor featurization and machine learning.
 
+<p align="center">
+  <a href="https://youtu.be/VWZZpjRx4PA" title="ProteinPRO on YouTube"><img src="https://img.shields.io/badge/YouTube-demo-FF0000?style=flat-square&logo=youtube&logoColor=white&labelColor=1a1a1a" height="22" alt="YouTube demo"/></a>
+  &nbsp;
+  <a href="https://youtu.be/-vXzR6s6_6Q" title="ProteinPRO on YouTube"><img src="https://img.shields.io/badge/YouTube-walkthrough-FF0000?style=flat-square&logo=youtube&logoColor=white&labelColor=1a1a1a" height="22" alt="YouTube walkthrough"/></a>
+</p>
+
 > **Hugging Face Spaces:** The YAML block above is Space metadata. After connecting this repo, set **Settings → App → Main file** to `app.py` if needed, and add secrets under **Settings → Variables and secrets**. See [DEPLOY_HF.md](DEPLOY_HF.md).
 
 ---
