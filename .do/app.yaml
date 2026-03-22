@@ -1,0 +1,16 @@
+# DigitalOcean App Platform - ProteinPRO
+# Deploy: Connect GitHub repo at cloud.digitalocean.com
+name: proteinpro
+region: nyc
+
+services:
+  - name: web
+    github:
+      repo: YOUR_ORG/ProteinPRO
+      branch: main
+    run_command: streamlit run app.py --server.port 8080 --server.address 0.0.0.0
+    envs:
+      - key: PORT
+        value: "8080"
+      # Add API keys as encrypted env vars in DO dashboard
+    http_port: 8080

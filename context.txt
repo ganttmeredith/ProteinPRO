@@ -1,0 +1,17 @@
+ProteinPRO: Protein Polymer Reactivity Optimization
+
+Goal posts: 
+1) upload model protein structure from PDB/OpenFold/AlphaFold to compare structures across models
+2) sample specific monomers which can be combined via PET-RAFT chemistry 
+*SPMA, TMAEMA, DEAEMA, DMAPMA, HPMA, PEGMA, BMA, EHMA
+3) Include specific monomer compositions mixtures within given design space constraints and their utility with binding to specific proteins for stability advancements
+4) Visualize this all via a deployable web-applet in Github which can update in realtime including 3D rendering and visualization. I would also like the user to have options to upload and download the files and data used in the analysis
+
+If possible, see how the following elements can be incorporated into the tech stack:
+* Github
+* Gemini API
+* Solana
+* ElevenLabs
+* DigitalOcean
+* Auth0
+

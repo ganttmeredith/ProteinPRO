@@ -1,0 +1,48 @@
+# ProteinPRO Configuration
+# Design space constraints for polymer-protein hybrid formulation
+
+# PET-RAFT compatible monomers with SMILES for featurization
+monomers:
+  SPMA:  # Sulfopropyl methacrylate
+    smiles: "CC(=O)OC(C)C(=O)OCCCS(=O)(=O)O"
+    category: anionic
+  TMAEMA:  # Trimethylaminoethyl methacrylate
+    smiles: "CC(=O)OC(C)C(=O)OCC[N+](C)(C)C"
+    category: cationic
+  DEAEMA:  # Diethylaminoethyl methacrylate
+    smiles: "CC(=O)OC(C)C(=O)OCCN(CC)CC"
+    category: cationic
+  DMAPMA:  # Dimethylaminopropyl methacrylamide
+    smiles: "CC(=O)C(=O)NCCC[N+](C)(C)C"
+    category: cationic
+  HPMA:   # Hydroxypropyl methacrylate
+    smiles: "CC(=O)OC(C)C(=O)OCC(C)O"
+    category: neutral_hydrophilic
+  PEGMA:  # Poly(ethylene glycol) methyl ether methacrylate
+    smiles: "CC(=O)OC(C)C(=O)OCOCCO"
+    category: neutral_hydrophilic
+  BMA:    # Butyl methacrylate
+    smiles: "CC(=O)OC(C)C(=O)OCCCC"
+    category: hydrophobic
+  EHMA:   # 2-Ethylhexyl methacrylate
+    smiles: "CC(=O)OC(C)C(=O)OCC(CCCC)CC"
+    category: hydrophobic
+
+# Design space constraints (molar fraction bounds)
+design_space:
+  min_monomer_fraction: 0.05
+  max_monomer_fraction: 0.50
+  max_monomers: 5
+  min_monomers: 2
+  composition_sum_tolerance: 0.01
+  max_hydrophobic_fraction: 0.35
+  dp_max: 200
+  dp_min: 50
+  dp_step: 50
+  
+
+# PDB fetch settings
+pdb:
+  fetch_timeout: 10
+  cache_dir: ".pdb_cache"
+  supported_formats: ["pdb", "cif"]

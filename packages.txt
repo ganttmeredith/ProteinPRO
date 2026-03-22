@@ -1,0 +1,2 @@
+# For Streamlit Cloud / Linux deployment
+# (empty if using pip-only; add system deps here if needed)
