@@ -1,15 +1,8 @@
----
-title: ProteinPRO
-emoji: 🧬
-colorFrom: purple
-colorTo: blue
-sdk: streamlit
-sdk_version: "1.40.0"
-app_file: app.py
-pinned: false
-license: apache-2.0
-short_description: Predict protein–polymer hybrid stability from PDB structures and PET-RAFT monomer compositions.
----
+# ProteinPRO 🧬
+
+[![HackDuke 2026 Runner-Up](https://img.shields.io/badge/HackDuke%202026-Runner--Up%20🏆-cc0033?style=for-the-badge)](https://devpost.com/software/proteinpro-protein-polymer-reactivity-optimizer-v1?_gl=1*18x1b3j*_gcl_au*MjA2MTU5NDcyMy4xNzY4NTgwNzUx*_ga*MTI2MTczMjQyNS4xNzY4NTgwNzUx*_ga_0YHJK3Y10M*czE3NzQzMTgxODQkbzMyJGcxJHQxNzc0MzE4MzU0JGo2MCRsMCRoMA..)
+
+> 🥈 Runner-Up at HackDuke 2026 – Code for Good
 
 # ProteinPRO: Protein Polymer Reactivity Optimization
 
